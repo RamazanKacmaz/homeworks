@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16-Ramazan Kacmaz</title>
+
+<style>
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.menu  ul{
+    list-style-type: none;
+    float: left;
+    margin-top: 10px;
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 40px;
+   
+}   
+
+.menu li{
+position: relative;
+float: left;
+width: 100px;
+
+}
+
+.menu ul li ul{
+    display: none;
+    box-shadow: 3px 3px 3px 3px #888888;
+    
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.menu ul li a:hover{
+    background: red;
+}
+
+.menu ul li ul li a{
+    float: left;
+    color: black;
+    width: 190px;
+  height: 40px;
+   
+   
+}
+
+.menu ul li ul li{
+  margin-left: 0px;
+  width: 150px;
+  height: 40px;
+  margin-right: 100px;
+  margin: 0px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+ 
+  
+   
+ 
+
+}
+
+.menu ul li ul li a:hover{
+    background-color: rgb(224, 213, 213);
+    
+}
+.menu ul li{
+    float: left;
+}
+
+
+.Info{
+    width: 60px;
+    float:right;
+    border: 2px solid blue;
+    color: blue;
+    margin-right: 5px;
+    padding: 20px;
+    height: 25px;
+    font-size: 24px;
+    text-align: center;
+
+}
+.Info:hover{
+    background-color: blue;
+    color: white;
+}
+.Success{
+    float: right;
+    border: 2px solid green;
+    text-align: center;
+    color: green;
+    margin-right: 5px;
+    padding: 20px;
+    width: 100px;
+    height: 25px;
+    font-size: 24px;
+    text-align: center;
+}
+.Success:hover{
+    background-color: green;
+    color: white;
+}
+.Warning{
+    float: right;
+    border: 2px solid orange;
+    text-align: center;
+    color: orange;
+    margin-right: 5px;
+    padding: 20px;
+    width: 100px;
+    height: 25px;
+    font-size: 24px;
+    text-align: center;
+}
+.Warning:hover{
+    background-color: orange;
+    color: white;
+}
+
+.Danger{
+    float: right;
+    border: 2px solid red;
+    text-align: center;
+    color: red;
+    margin-right: 5px;
+    padding: 20px;
+    width: 100px;
+    height: 25px;
+    font-size: 24px;
+    text-align: center;
+}
+.Danger:hover{
+    background-color: red;
+    color: white;
+}
+.Default{
+    float: right;
+    border: 2px solid gray;
+    text-align: center;
+    color: gray;
+    margin-right: 5px;
+    padding: 20px;
+    width: 100px;
+    height: 25px;
+    font-size: 24px;
+    text-align: center;
+    
+    
+
+}
+.Default:hover{
+    background: gray;
+    color: white;
+}
+
+.About{
+    border: 1px solid ;
+    background-color: green;
+    color: white;
+    float: left -130px;
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5px;
+    left:-80;
+  
+}
+
+
+.Blog{
+    border: 1px solid ;
+    background-color:blue;
+    color: white;
+    float: left -80px;
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5px;
+
+}
+
+.Projects{
+    border: 1px solid ;
+    background-color:red;
+    color: white;
+    float: left -80px;
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5px;
+    
+
+}
+.Contact{
+    border: 1px solid ;
+    background-color:gray;
+    color: white;
+    float: left -80px;
+    width: 100px;
+    height: 30px;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 5px;
+         
+}
+
+#Sidenav a{
+
+position: absolute;
+left: -90px;
+transition: 0.3s;
+width: 100px;
+text-decoration: none;
+color: white;
+border-radius: 0 5px 5px 0;
+margin-top: 40px;
+padding: 15px;
+font-size: 20px;
+
+}
+
+#Sidenav a:hover{
+    left: 0px;
+    background-color: gray;
+}
+
+#about{
+  top: 80px;
+  background-color: green;
+  color: white; 
+}
+#blog{
+
+    top: 140px;
+    background-color: blue;
+    color: white;
+}
+
+#projects{
+
+    top: 200px;
+    background-color:red;
+    color: white;
+}
+
+#contact{
+
+    top: 260px;
+    background-color:gray;
+    color: white;
+}
+
+
+
+</style>
+ 
+
+
+</head>
+<body>
+
+<div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Dropdown</a>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </li>
+    </ul>
+
+
+</div>
+ <br><br><br>
+
+<div class="Default">Default</div>
+<div class="Danger">Danger</div>
+<div class="Warning">Warning</div>
+<div class="Info">Info</div>
+<div class="Success">Success</div>
+
+
+
+<div id="Sidenav" class="sidenav">
+
+    <a href="#" id="about">About</a>
+    <a href="#" id="blog">Blog</a>
+    <a href="#" id="projects">Projects</a>
+    <a href="#" id="contact">Contact</a>
+
+</div>
+
+
+</body>
+</html>
